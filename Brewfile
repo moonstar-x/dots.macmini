@@ -101,6 +101,7 @@ cask "zoom"
 mas "Amphetamine", id: 937984704
 mas "Mp3Tag", id: 1532597159
 mas "RunCatNeo", id: 6757801838
+mas "ScrobblesForLast.fm", id: 1344679160
 mas "SwiftPlayground", id: 1496833156
 mas "TheUnarchiver", id: 425424353
 mas "TogglTrack", id: 1291898086
