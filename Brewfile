@@ -62,7 +62,6 @@ brew "posting"
 brew "starship"
 
 # Agents
-brew "hermes-agent"
 tap "anomalyco/tap", trusted: true
 brew "anomalyco/tap/opencode"
 
