@@ -67,6 +67,7 @@ brew "anomalyco/tap/opencode"
 
 # Casks
 cask "alt-tab"
+cask "chatgpt"
 cask "codex"
 cask "comfy"
 cask "discord"
