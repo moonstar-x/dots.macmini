@@ -64,11 +64,13 @@ brew "starship"
 # Agents
 tap "anomalyco/tap", trusted: true
 brew "anomalyco/tap/opencode"
-
-# Casks
-cask "alt-tab"
 cask "chatgpt"
 cask "codex"
+cask "claude"
+cask "claude-code"
+
+# General Casks
+cask "alt-tab"
 cask "comfy"
 cask "discord"
 cask "docker-desktop"
