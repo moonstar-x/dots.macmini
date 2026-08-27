@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -euo pipefail
+
 source "$HOME/.zshrc"
 
 echo "Configuring Node.js..."
