@@ -1,0 +1,16 @@
+servers:
+  - name: Jellyfin Music
+    url: https://music.ms-x.dev
+    quick_connect: true
+    default: true
+
+art: true
+persist: true
+auto_color: true
+always_shows_lyrics: false
+
+mpv:
+  af: lavfi=[loudnorm=I=-16:TP=-3:LRA=4]
+  no-config: true
+  log-file: /tmp/mpv.log
+
