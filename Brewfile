@@ -103,7 +103,10 @@ cask "zoom"
 
 # App Store
 mas "Amphetamine", id: 937984704
+mas "Keynote", id: 361285480
 mas "Mp3Tag", id: 1532597159
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
 mas "RunCatNeo", id: 6757801838
 mas "ScrobblesForLast.fm", id: 1344679160
 mas "SwiftPlayground", id: 1496833156
