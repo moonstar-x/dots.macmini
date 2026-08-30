@@ -30,6 +30,11 @@ ln -sf "$CONFIG_DIR/jellyfin-tui/config.yaml" "$MAC_XDG_CONFIG_HOME/jellyfin-tui
 echo "Linking config for starship"
 ln -sf "$CONFIG_DIR/starship/config.toml" "$LINUX_XDG_CONFIG_HOME/starship.toml"
 
+echo "Linking config for sublime-text"
+mkdir -p "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User"
+ln -sf "$CONFIG_DIR/sublime-text/Preferences.sublime-settings" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Preferences.sublime-settings"
+ln -sf "$CONFIG_DIR/sublime-text/Default.sublime-keymap" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Default.sublime-keymap"
+
 echo "Linking config for zsh"
 ln -sf "$CONFIG_DIR/zsh/.zprofile" "$HOME/.zprofile"
 ln -sf "$CONFIG_DIR/zsh/.zshrc" "$HOME/.zshrc"
