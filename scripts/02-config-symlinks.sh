@@ -35,6 +35,10 @@ mkdir -p "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User"
 ln -sf "$CONFIG_DIR/sublime-text/Preferences.sublime-settings" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Preferences.sublime-settings"
 ln -sf "$CONFIG_DIR/sublime-text/Default.sublime-keymap" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Default.sublime-keymap"
 
+echo "Linking config for VSCodium"
+mkdir -p "$MAC_XDG_CONFIG_HOME/VSCodium/User"
+ln -sf "$CONFIG_DIR/vscodium/settings.json" "$MAC_XDG_CONFIG_HOME/VSCodium/User/settings.json"
+
 echo "Linking config for zsh"
 ln -sf "$CONFIG_DIR/zsh/.zprofile" "$HOME/.zprofile"
 ln -sf "$CONFIG_DIR/zsh/.zshrc" "$HOME/.zshrc"

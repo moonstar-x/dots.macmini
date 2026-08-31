@@ -1,0 +1,9 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.productIconTheme": "bongocat",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
+    "window.newWindowProfile": "Default"
+}
+
