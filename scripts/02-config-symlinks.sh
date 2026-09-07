@@ -15,6 +15,13 @@ rm -rf "$LINUX_XDG_CONFIG_HOME/atuin/config.toml" "$LINUX_XDG_CONFIG_HOME/atuin/
 ln -sf "$CONFIG_DIR/atuin/config.toml" "$LINUX_XDG_CONFIG_HOME/atuin/config.toml"
 ln -sf "$CONFIG_DIR/atuin/themes" "$LINUX_XDG_CONFIG_HOME/atuin/themes"
 
+echo "Linking config for bat"
+mkdir -p "$LINUX_XDG_CONFIG_HOME/bat/themes"
+rm -rf "$LINUX_XDG_CONFIG_HOME/bat/config" "$LINUX_XDG_CONFIG_HOME/bat/themes"
+ln -sf "$CONFIG_DIR/bat/config" "$LINUX_XDG_CONFIG_HOME/bat/config"
+ln -sf "$CONFIG_DIR/bat/themes" "$LINUX_XDG_CONFIG_HOME/bat/themes"
+bat cache --build
+
 echo "Linking config for btop"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/btop/themes"
 rm -rf "$LINUX_XDG_CONFIG_HOME/btop/btop.conf" "$LINUX_XDG_CONFIG_HOME/btop/themes"
