@@ -9,6 +9,12 @@ CONFIG_DIR="$DOTFILES_ROOT/config"
 MAC_XDG_CONFIG_HOME="$HOME/Library/Application Support"
 LINUX_XDG_CONFIG_HOME="$HOME/.config"
 
+echo "Linking config for atuin"
+mkdir -p "$LINUX_XDG_CONFIG_HOME/atuin/themes"
+rm -rf "$LINUX_XDG_CONFIG_HOME/atuin/config.toml" "$LINUX_XDG_CONFIG_HOME/atuin/themes"
+ln -sf "$CONFIG_DIR/atuin/config.toml" "$LINUX_XDG_CONFIG_HOME/atuin/config.toml"
+ln -sf "$CONFIG_DIR/atuin/themes" "$LINUX_XDG_CONFIG_HOME/atuin/themes"
+
 echo "Linking config for btop"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/btop/themes"
 rm -rf "$LINUX_XDG_CONFIG_HOME/btop/btop.conf" "$LINUX_XDG_CONFIG_HOME/btop/themes"
