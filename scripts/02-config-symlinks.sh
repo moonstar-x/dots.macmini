@@ -51,6 +51,10 @@ echo "Linking config for lazygit"
 mkdir -p "$MAC_XDG_CONFIG_HOME/lazygit"
 ln -sf "$CONFIG_DIR/lazygit/config.yml" "$MAC_XDG_CONFIG_HOME/lazygit/config.yml"
 
+echo "Linking config for opencode"
+mkdir -p "$LINUX_XDG_CONFIG_HOME/opencode"
+ln -sf "$CONFIG_DIR/opencode/tui.json" "$LINUX_XDG_CONFIG_HOME/opencode/tui.json"
+
 echo "Linking config for starship"
 ln -sf "$CONFIG_DIR/starship/config.toml" "$LINUX_XDG_CONFIG_HOME/starship.toml"
 
