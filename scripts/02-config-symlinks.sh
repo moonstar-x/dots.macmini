@@ -8,6 +8,7 @@ CONFIG_DIR="$DOTFILES_ROOT/config"
 
 MAC_XDG_CONFIG_HOME="$HOME/Library/Application Support"
 LINUX_XDG_CONFIG_HOME="$HOME/.config"
+LOCAL_SHARE="$HOME/.local/share"
 
 echo "Linking config for atuin"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/atuin/themes"
@@ -54,6 +55,12 @@ ln -sf "$CONFIG_DIR/lazygit/config.yml" "$MAC_XDG_CONFIG_HOME/lazygit/config.yml
 echo "Linking config for opencode"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/opencode"
 ln -sf "$CONFIG_DIR/opencode/tui.json" "$LINUX_XDG_CONFIG_HOME/opencode/tui.json"
+
+echo "Linking config for posting"
+mkdir -p "$LOCAL_SHARE/posting/themes" "$LINUX_XDG_CONFIG_HOME/posting"
+rm -rf "$LOCAL_SHARE/posting/themes"
+ln -sf "$CONFIG_DIR/posting/config.yaml" "$LINUX_XDG_CONFIG_HOME/posting/config.yaml"
+ln -sf "$CONFIG_DIR/posting/themes" "$LOCAL_SHARE/posting/themes"
 
 echo "Linking config for starship"
 ln -sf "$CONFIG_DIR/starship/config.toml" "$LINUX_XDG_CONFIG_HOME/starship.toml"
