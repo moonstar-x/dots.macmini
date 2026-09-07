@@ -68,3 +68,6 @@ export PATH="$PATH:~/.lmstudio/bin"
 fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
+
+# Custom
+source "$HOME/.zsh/fzf.sh"
