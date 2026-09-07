@@ -40,6 +40,7 @@ echo "Linking config for sublime-text"
 mkdir -p "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User"
 ln -sf "$CONFIG_DIR/sublime-text/Preferences.sublime-settings" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Preferences.sublime-settings"
 ln -sf "$CONFIG_DIR/sublime-text/Default.sublime-keymap" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Default.sublime-keymap"
+ln -sf "$CONFIG_DIR/sublime-text/Catppuccin-Macchiato.sublime-color-scheme" "$MAC_XDG_CONFIG_HOME/Sublime Text/Packages/User/Catppuccin-Macchiato.sublime-color-scheme"
 
 echo "Linking config for VSCodium"
 mkdir -p "$MAC_XDG_CONFIG_HOME/VSCodium/User"
