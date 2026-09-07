@@ -28,6 +28,10 @@ rm -rf "$LINUX_XDG_CONFIG_HOME/btop/btop.conf" "$LINUX_XDG_CONFIG_HOME/btop/them
 ln -sf "$CONFIG_DIR/btop/btop.conf" "$LINUX_XDG_CONFIG_HOME/btop/btop.conf"
 ln -sf "$CONFIG_DIR/btop/themes" "$LINUX_XDG_CONFIG_HOME/btop/themes"
 
+echo "Linking config for eza"
+mkdir -p "$MAC_XDG_CONFIG_HOME/eza"
+ln -sf "$CONFIG_DIR/eza/theme.yml" "$MAC_XDG_CONFIG_HOME/eza/theme.yml"
+
 echo "Linking config for ghostty"
 mkdir -p "$MAC_XDG_CONFIG_HOME/com.mitchellh.ghostty"
 ln -sf "$CONFIG_DIR/ghostty/config" "$MAC_XDG_CONFIG_HOME/com.mitchellh.ghostty/config"
