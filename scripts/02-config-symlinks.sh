@@ -31,6 +31,10 @@ echo "Linking config for eza"
 mkdir -p "$MAC_XDG_CONFIG_HOME/eza"
 ln -sf "$CONFIG_DIR/eza/theme.yml" "$MAC_XDG_CONFIG_HOME/eza/theme.yml"
 
+echo "Linking config for gh-dash"
+mkdir -p "$LINUX_XDG_CONFIG_HOME/gh-dash"
+ln -sf "$CONFIG_DIR/gh-dash/config.yml" "$LINUX_XDG_CONFIG_HOME/gh-dash/config.yml"
+
 echo "Linking config for ghostty"
 mkdir -p "$MAC_XDG_CONFIG_HOME/com.mitchellh.ghostty"
 ln -sf "$CONFIG_DIR/ghostty/config" "$MAC_XDG_CONFIG_HOME/com.mitchellh.ghostty/config"

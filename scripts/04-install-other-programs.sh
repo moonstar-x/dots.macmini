@@ -21,6 +21,10 @@ jellyfin-tui() {
   rm -rf /tmp/jellyfin-tui
 }
 
+gh-dash() {
+  gh extension install dlvhdr/gh-dash
+}
+
 # Runner
 
 if declare -f "$cmd" > /dev/null; then
