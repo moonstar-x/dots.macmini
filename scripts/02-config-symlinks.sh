@@ -20,7 +20,6 @@ mkdir -p "$LINUX_XDG_CONFIG_HOME/bat/themes"
 rm -rf "$LINUX_XDG_CONFIG_HOME/bat/config" "$LINUX_XDG_CONFIG_HOME/bat/themes"
 ln -sf "$CONFIG_DIR/bat/config" "$LINUX_XDG_CONFIG_HOME/bat/config"
 ln -sf "$CONFIG_DIR/bat/themes" "$LINUX_XDG_CONFIG_HOME/bat/themes"
-bat cache --build
 
 echo "Linking config for btop"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/btop/themes"
@@ -60,3 +59,7 @@ ln -sf "$CONFIG_DIR/vscodium/settings.json" "$MAC_XDG_CONFIG_HOME/VSCodium/User/
 echo "Linking config for zsh"
 ln -sf "$CONFIG_DIR/zsh/.zprofile" "$HOME/.zprofile"
 ln -sf "$CONFIG_DIR/zsh/.zshrc" "$HOME/.zshrc"
+
+echo "Linking config for zsh -> fast-syntax-highlighting"
+mkdir -p "$LINUX_XDG_CONFIG_HOME/fsh"
+ln -sf "$CONFIG_DIR/zsh/plugins/fsh/catppuccin-macchiato.ini" "$LINUX_XDG_CONFIG_HOME/fsh/catppuccin-macchiato.ini"
