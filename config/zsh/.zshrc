@@ -12,6 +12,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
+# Custom before loading the plugins.
+source "$HOME/.zsh/fzf.sh"
+source "$HOME/.zsh/zsh-syntax-highlighting.zsh"
+
 plugins=(
   asdf
   deno
@@ -68,6 +72,3 @@ export PATH="$PATH:~/.lmstudio/bin"
 fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
-
-# Custom
-source "$HOME/.zsh/fzf.sh"
