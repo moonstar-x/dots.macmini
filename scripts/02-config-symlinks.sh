@@ -43,6 +43,10 @@ echo "Linking config for jellyfin-tui"
 mkdir -p "$MAC_XDG_CONFIG_HOME/jellyfin-tui"
 ln -sf "$CONFIG_DIR/jellyfin-tui/config.yaml" "$MAC_XDG_CONFIG_HOME/jellyfin-tui/config.yaml"
 
+echo "Linking config for lazygit"
+mkdir -p "$MAC_XDG_CONFIG_HOME/lazygit"
+ln -sf "$CONFIG_DIR/lazygit/config.yml" "$MAC_XDG_CONFIG_HOME/lazygit/config.yml"
+
 echo "Linking config for starship"
 ln -sf "$CONFIG_DIR/starship/config.toml" "$LINUX_XDG_CONFIG_HOME/starship.toml"
 
