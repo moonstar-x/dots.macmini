@@ -64,10 +64,14 @@ echo "Linking config for VSCodium"
 mkdir -p "$MAC_XDG_CONFIG_HOME/VSCodium/User"
 ln -sf "$CONFIG_DIR/vscodium/settings.json" "$MAC_XDG_CONFIG_HOME/VSCodium/User/settings.json"
 
+echo "Linking config for Xcode"
+mkdir -p "$HOME/Library/Developer/Xcode/UserData/FontAndColorThemes"
+ln -sf "$CONFIG_DIR/xcode/Catppuccin-Macchiato.xccolortheme" "$HOME/Library/Developer/Xcode/UserData/FontAndColorThemes/Catppuccin-Macchiato.xccolortheme"
+
 echo "Linking config for zsh"
 ln -sf "$CONFIG_DIR/zsh/.zprofile" "$HOME/.zprofile"
 ln -sf "$CONFIG_DIR/zsh/.zshrc" "$HOME/.zshrc"
-ln -sf "$CONFIG_DIR/zsh/.zsh" "$HOME/.zsh"
+ln -sfn "$CONFIG_DIR/zsh/.zsh" "$HOME/.zsh"
 
 echo "Linking config for zsh -> fast-syntax-highlighting"
 mkdir -p "$LINUX_XDG_CONFIG_HOME/fsh"
