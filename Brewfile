@@ -57,6 +57,8 @@ brew "superfile"
 tap "gromgit/brewtils", trusted: true
 brew "gromgit/brewtils/taproom"
 brew "posting"
+tap "anthonymaley/musictui", trusted: true
+brew "anthonymaley/musictui/musictui"
 
 # Customization
 brew "starship"

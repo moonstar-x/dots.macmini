@@ -4,6 +4,15 @@
     "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.iconTheme": "catppuccin-macchiato",
     "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
-    "window.newWindowProfile": "Default"
+    "window.newWindowProfile": "Default",
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
+    "git.confirmSync": false
 }
 
