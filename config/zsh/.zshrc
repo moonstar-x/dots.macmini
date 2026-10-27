@@ -72,3 +72,5 @@ export PATH="$PATH:~/.lmstudio/bin"
 fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit

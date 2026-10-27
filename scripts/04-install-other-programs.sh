@@ -25,6 +25,10 @@ gh-dash() {
   gh extension install dlvhdr/gh-dash
 }
 
+comfy-cli() {
+  pip install comfy-cli
+}
+
 # Runner
 
 if declare -f "$cmd" > /dev/null; then

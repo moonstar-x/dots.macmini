@@ -116,5 +116,6 @@ mas "SwiftPlayground", id: 1496833156
 mas "TheUnarchiver", id: 425424353
 mas "TogglTrack", id: 1291898086
 mas "Transporter", id: 1450874784
+mas "Trello", id: 1278508951
 mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
